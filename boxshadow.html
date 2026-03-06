@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>shadow</title>
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <!-- js link is down and css link up -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <style>
+      .custom-gradient {
+       background: linear-gradient(45deg, #d5fd0d, #36c2e2 ,red);
+       color: rgb(40, 37, 39);
+       }
+    </style>
+</head>
+<body>
+    <div class="container mt-5">
+        <p class="p-5 m-4 bg-light text-center shadow-none">
+        Lorem ipsum dolor sit amet.</p>
+        <p class="p-5 m-4 bg-light text-center shadow-sm">
+        Lorem ipsum dolor sit amet.</p>
+        <p class="p-5 m-4 bg-light text-center shadow-lg">
+        here only shadow is for box.</p>
+        <p class="p-5 m-4 bg-light text-center shadow">
+        Apply css for other shadow like text.</p>
+    </div>
+
+        
+           
+    <main class="custom-gradient p-5 rounded">Custom Gradient Background</main>
+
+    <footer class="p-4 rounded shadow-lg custom-gradient mt-4">
+    <h4>Gradient + Shadow</h4>
+    <p>This box has both.</p>
+   </footer>
+
+</body>
+</html>

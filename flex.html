@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width-device-width, initial-scale=1.0">
+    <!-- -------------------------------------------------------------------------->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <!-- js link is down and css link up -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <title>FLEX BOOTSTRAP</title>
+    </head>
+<body>
+                       <!-- section : flex-row -->
+    <h3 class="text-center text-secondary">FLEX ROW & ROW REVERSE</h3>
+    <div class="container-fluid mt-4 ">
+        <div class="row">
+              <!-- just like flex container use row -->
+            <div class="d-flex text-light bg-success fw-bold flex-row">
+               <div class="p-2">Flex 1</div>
+               <div class="p-2">Flex 2</div>
+               <div class="p-2">Flex 3</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid mt-2">
+        <div class="row">
+            <div class="d-flex text-light bg-success fw-bold flex-row-reverse">
+                <div class="p-2">Flex 1</div>
+                <div class="p-2">Flex 2</div>
+                <div class="p-2">Flex 3</div>
+            </div>
+        </div>
+    </div>
+                           <!-- flex-column  -->
+    <!-- =================================================================================== -->
+        <h3 class="text-center text-secondary">FLEX -column  & column REVERSE</h3>
+    <div class="container-fluid mt-2">
+        <div class="row">
+            <div class="d-flex text-light fw-bold text-center flex-column">
+                <div class="p-2 bg-info">Flex item 1</div>
+                <div class="p-2 bg-warning">Flex item 2</div>
+                <div class="p-2 bg-danger">Flex item 3</div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="container-fluid mt-2">
+        <div class="row">
+            <div class="d-flex text-light fw-bold text-center flex-column-reverse">
+                <div class="p-2 bg-info">Flex item 1</div>
+                <div class="p-2 bg-warning">Flex item 2</div>
+                <div class="p-2 bg-danger">Flex item 3</div>
+            </div>
+        </div>
+    </div>
+
+<!-- ============================================================================================= -->
+    <h3 class="text-center text-secondary">d-inline-flex:</h3>
+    <div class="container-fluid mt-3">
+        <div class="row">
+            <div class="d-inline-flex p-3 bg-primary text-center fw-bold text-light">
+                <div class="p-2 bg-info"   >Flex item 1 </div>
+                <div class="p-2 bg-warning">Flex item 2</div>
+                <div class="p-2 bg-success">Flex item 3</div>
+            </div>
+        </div>
+    </div>
+<!-- ============================================================================================ -->
+    <h3 class="text-center text-secondary">FLEX- wrap, no-wrap and wrap-reverese</h3>
+
+                                <!-- flex-wrap  -->
+            <!-- <div class="d-flex flex-wrap flex-row fw-bold mt-3" style="width:1000px;">
+                <div class="p-2 bg-dark text-white">
+                    <h1>Icon 1</h1>
+                    <p>content goes here.</p>
+                </div>
+
+                <div class="p-2 bg-warning">
+                    <h1>Icon 1</h1>
+                    <p>content goes here</p>
+                </div>
+
+                <div class="p-2 bg-info">
+                    <h1>Icon 1</h1>
+                    <p>content goes here</p>
+                </div>
+            </div> -->
+    <h3>FLEX-WRAP</h3>
+<div class="d-flex flex-wrap bg-light p-3 border" style="width: 300px;">
+      <div class="p-2 bg-primary text-white">Box 1</div>
+      <div class="p-2 bg-success text-white">Box 2</div>
+      <div class="p-2 bg-warning text-dark">Box 3</div>
+      <div class="p-2 bg-danger text-white">Box 4</div>
+      <div class="p-2 bg-info text-dark">Box 5</div>
+      <div class="p-2 bg-warning text-dark">Box 6</div>
+</div>
+
+                                 <!-- wrap-reverse  -->
+<!-- <div class="d-flex flex-wrap-reverse fw-bold mt-3 "style="width:300px;">
+        <div class="p-2 bg-dark text-white">
+            <h1>Icon 1</h1>
+            <p>content goes here:</p>
+        </div>
+
+                <div class="p-2 bg-warning">
+                    <h1>Icon 2</h1>
+                    <p>content goes here</p>
+                </div>
+
+                <div class="p-2 bg-info">
+                    <h1>Icon 3</h1>
+                    <p>content goes here</p>
+                </div>
+            </div> -->
+
+             <h3>FLEX-NOWRAP</h3>
+<div class="d-flex FLEX-NO-WRAP bg-light p-3 border" style="width: 300px;">
+      <div class="p-2 bg-primary text-white">Box 1</div>
+      <div class="p-2 bg-success text-white">Box 2</div>
+      <div class="p-2 bg-warning text-dark">Box 3</div>
+      <div class="p-2 bg-danger text-white">Box 4</div>
+      <div class="p-2 bg-info text-dark"   >Box 5</div>
+      <div class="p-2 bg-warning text-dark">Box 6</div>
+</div>
+
+                                   <!-- no-wrap/ d-inline-flex looks same-->
+            <!-- <div class="d-flex flex-row flex-wrap fw-bold mt-3" style="width:200px;">
+                <div class="p-2 bg-dark text-white">
+                    <h1>Icon 1</h1>
+                    <p>content goes here</p>
+                </div>
+
+                <div class="p-2 bg-warning">
+                    <h1>Icon 1</h1>
+                    <p>content goes here</p>
+                </div>
+
+                <div class="p-2 bg-info">
+                    <h1>Icon 1</h1>
+                    <p>content goes here</p>
+                </div>
+            </div> -->
+<!-- 
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="d-flex flex-wrap-reverse fw-bold mt-3" style="width:300px;">
+                    <div class="p-2 bg-dark text-white">
+                            <h1>Icon 1</h1>
+                            <p>content goes here</p>
+                        </div>
+
+                        <div class="p-2 bg-warning">
+                            <h1>Icon 2</h1>
+                            <p>content goes here</p>
+                        </div>
+
+                        <div class="p-2 bg-info">
+                            <h1>Icon 3</h1>
+                            <p>content goes here</p>
+                        </div>
+                    </div>
+                 </div>
+            </div> -->
+             <h3>FLEX-rap-reverse</h3>
+<div class="d-flex flex-wrap-reverse bg-light p-3 border" style="width: 300px;">
+      <div class="p-2 bg-primary text-white">Box 1</div>
+      <div class="p-2 bg-success text-white">Box 2</div>
+      <div class="p-2 bg-warning text-dark">Box 3</div>
+      <div class="p-2 bg-danger text-white">Box 4</div>
+      <div class="p-2 bg-info text-dark"   >Box 5</div>
+      <div class="p-2 bg-warning text-dark">Box 6</div>
+</div>
+
+<!-- --========================================================================-- -->
+                    <h3 class="text-center" style="color: rgb(16, 15, 15);">FLEX-wrap -justify-content-(between)</h3>
+                    <div class="d-flex flex-wrap justify-content-between fw-bold mt-3">
+                        <div class="p-2 bg-dark text-white">
+                            <h1>Icon 1</h1>
+                            <p>content goes here</p>
+                        </div>
+
+                        <div class="p-2 bg-warning">
+                            <h1>Icon 1</h1>
+                            <p>content goes here</p>
+                        </div>
+
+                        <div class="p-2 bg-info">
+                            <h1>Icon 1</h1>
+                            <p>content goes here</p>
+                        </div>
+                    </div>
+                    <h3 class="text-start"  style="color: rgb(17, 16, 16);">FLEX-wrap -justify-content-(start)</h3>
+                    <div class="d-flex flex-wrap justify-content-start fw-bold mt-3">
+                        <div class="p-2 bg-dark text-white">
+                            <h1>Icon 1</h1>
+                            <p>content goes here</p>
+                        </div>
+
+                        <div class="p-2 bg-warning">
+                            <h1>Icon 1</h1>
+                            <p>content goes here</p>
+                        </div>
+
+                        <div class="p-2 bg-info">
+                            <h1>Icon 1</h1>
+                            <p>content goes here</p>
+                        </div>
+                    </div>
+
+                    <h3 class="text-end" style="color: rgb(22, 20, 20);">FLEX-wrap -justify-content-(end)</h3>
+                    <div class="d-flex flex-wrap justify-content-end fw-bold mt-3">
+                        <div class="p-2 bg-dark text-white">
+                            <h1>Icon 1</h1>
+                            <p>content goes here</p>
+                        </div>
+
+                        <div class="p-2 bg-warning">
+                            <h1>Icon 1</h1>
+                            <p>content goes here</p>
+                        </div>
+
+                        <div class="p-2 bg-info">
+                            <h1>Icon 1</h1>
+                            <p>content goes here</p>
+                        </div>
+                    </div>
+                    <h3 class="text-center" style="color: rgb(20, 19, 19);">FLEX-wrap -justify-content-(center)</h3>
+                    <div class="d-flex flex-wrap justify-content-center fw-bold mt-3">
+                        <div class="p-2 bg-dark text-white">
+                            <h1>Icon 1</h1>
+                            <p>content goes here</p>
+                        </div>
+
+                        <div class="p-2 bg-warning">
+                            <h1>Icon 1</h1>
+                            <p>content goes here</p>
+                        </div>
+
+                        <div class="p-2 bg-info">
+                            <h1>Icon 1</h1>
+                            <p>content goes here</p>
+                        </div>
+                    </div>
+
+                    <h3 class="text-center" style="color: rgb(17, 16, 16);">FLEX-wrap -justify-content-(evenly)</h3>
+                    <div class="d-flex flex-wrap justify-content-evenly fw-bold mt-3">
+                        <div class="p-2 bg-dark text-white">
+                            <h1>Icon 1</h1>
+                            <p>content goes here</p>
+                        </div>
+
+                        <div class="p-2 bg-warning">
+                            <h1>Icon 1</h1>
+                            <p>content goes here</p>
+                        </div>
+
+                        <div class="p-2 bg-info">
+                            <h1>Icon 1</h1>
+                            <p>content goes here</p>
+                        </div>
+                    </div>
+<!-- --------================================================================------------------- -->
+                 <h3  class="text-center" style="color: rgb(21, 22, 21);">Align-items-start</h3>
+                    <div class="d-flex align-items-start fw-bold mt-3 bg-light" style="height: 200px;">
+                        <div class="p-2 bg-dark text-white">
+                            <h1>Icon 1</h1>
+                            <p>content goes here</p>
+                        </div>
+
+                        <div class="p-2 bg-warning">
+                            <h1>Icon 1</h1>
+                            <p>content goes here</p>
+                        </div>
+
+                        <div class="p-2 bg-info">
+                            <h1>Icon 1</h1>
+                            <p>content goes here</p>
+                        </div>
+                    </div>
+
+                      <h3  class="text-center" style="color: rgb(21, 22, 21);">Align-items-end</h3>
+                    <div class="d-flex align-items-end fw-bold mt-3 bg-light" style="height:200px;">
+                        <div class="p-2 bg-dark text-white">
+                            <h1>Icon 1</h1>
+                            <p>content goes here</p>
+                        </div>
+
+                        <div class="p-2 bg-warning">
+                            <h1>Icon 1</h1>
+                            <p>content goes here</p>
+                        </div>
+
+                        <div class="p-2 bg-info">
+                            <h1>Icon 1</h1>
+                            <p>content goes here</p>
+                        </div>
+                    </div>
+                     <h3  class="text-center" style="color: rgb(21, 22, 21);">Alignitems-center</h3>
+                    <div class="d-flex align-items-center fw-bold mt-3 bg-light" style="height: 200px;">
+                        <div class="p-2 bg-dark text-white">
+                            <h1>Icon 1</h1>
+                            <p>content goes here</p>
+                        </div>
+
+                        <div class="p-2 bg-warning">
+                            <h1>Icon 1</h1>
+                            <p>content goes here</p>
+                        </div>
+
+                        <div class="p-2 bg-info">
+                            <h1>Icon 1</h1>
+                            <p>content goes here</p>
+                        </div>
+                    </div>
+                    <h3  class="text-center" style="color: rgb(21, 22, 21);">Align-items-baseline</h3>
+                    <div class="d-flex align-items-baseline fw-bold mt-3 bg-light" style="height: 200px;">
+                        <div class="p-2 bg-dark text-white">
+                            <h1>Icon 1</h1>
+                            <p>content goes here</p>
+                        </div>
+
+                        <div class="p-2 bg-warning">
+                            <h1>Icon 1</h1>
+                            <p>content goes here</p>
+                        </div>
+
+                        <div class="p-2 bg-info">
+                            <h1>Icon 1</h1>
+                            <p>content goes here</p>
+                        </div>
+                    </div>
+                     <h3  class="text-center" style="color: rgb(21, 22, 21);">Stretch</h3>
+                     <h3 class="text-center"> align-item-stretch is a default property</h3>
+                    <div class="d-flex align-items-stretch fw-bold mt-3 bg-light" style="height: 200px;">
+                        <div class="p-2 bg-dark text-white">
+                            <h1>Icon 1</h1>
+                            <p>content goes here</p>
+                        </div>
+
+                        <div class="p-2 bg-warning">
+                            <h1>Icon 1</h1>
+                            <p>content goes here</p>
+                        </div>
+
+                        <div class="p-2 bg-info">
+                            <h1>Icon 1</h1>
+                            <p>content goes here</p>
+                        </div>
+                    </div>
+                </div>
+
+<!-- ------=============================================================================---------------- -->
+                <!-- .flex-fill for equal width -->
+                <h3 class="text-center">Flex-fill,ms-auto,me-auto</h3>
+                <div class="container mt-3">
+                    <div class="row">
+                        <div class="d-flex">
+                            <div class="p-2 bg-info flex-fill">Flex item 1</div>
+                            <div class="p-2 bg-warning flex-fill">Flex item 2</div>
+                            <div class="p-2 bg-primary flex-fill">Flex item 3</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container mt-5">
+                    <div class="row">
+                        <div class="d-flex bg-primary">
+                            <div class="p-2 ms-auto bg-info">Flex item 1</div>
+                            <div class="p-2 bg-warning">Flex item 2</div>
+                            <div class="p-2 bg-danger">Flex item 3</div>
+                        </div>
+
+                        
+                          
+                        <div class="d-flex bg-warning">
+                            <div class="p-2 bg-info">Flex item 1</div>
+                            <div class="p-2 bg-warning">Flex item 2</div>
+                            <div class="p-2 me-auto bg-danger">Flex item 3</div>
+                        </div>
+                   </div>
+                </div>
+
+       
+       
+   
+    </body>
+    </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+

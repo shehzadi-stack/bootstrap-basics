@@ -1,0 +1,43 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>d-flex vs d-inline-flex</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="p-4">
+ <!-- =========================================================================================== -->
+  <h4 class="mb-3 text-primary">Example using <code>d-flex</code></h4>
+  <div class="d-flex bg-secondary p-3 border rounded mb-4">
+    <button class="btn btn-primary me-2">Home</button>
+    <button class="btn btn-success me-2">About</button>
+    <button class="btn btn-warning">Contact</button>
+  </div>
+ 
+  <div class="d-flex bg-secondary p-3 border rounded mb-4">
+    <button class="btn btn-primary me-2">Home</button>
+    <button class="btn btn-success me-2">About</button>
+    <button class="btn btn-warning">Contact</button>
+  </div>
+
+  <p>👉 <b>d-flex</b> makes the container a flex box but it behaves like a <b>block element</b> — it takes up the full width of the page.</p>
+
+  
+
+  <hr class="my-4">
+<!-- =============================================================================================== -->
+  <h4 class="mb-3 text-success">Example using <code>d-inline-flex</code></h4>
+  <div class="d-inline-flex bg-secondary p-3 border rounded me-3">
+    <button class="btn btn-primary me-2">Home</button>
+    <button class="btn btn-success me-2">About</button>
+    <button class="btn btn-warning">Contact</button>
+  </div>
+
+  <div class="d-inline-flex bg-secondary p-3 border rounded">
+    <p class="mb-0">Another inline-flex box beside it!</p>
+  </div>
+
+  <p class="mt-3">👉 <b>d-inline-flex</b> keeps everything in a flex layout but behaves like an <b>inline element</b> — so multiple boxes can sit side by side.</p>
+
+</body>
+</html>
